@@ -1,0 +1,24 @@
+Server-Client Application in Java
+
+To run the above two java files:
+Server - 
+javac Server_2015117.java 
+java Server_2015117 port_number_of_server
+Client -
+javac Client_2015117.java 
+java Client_2015117 port_number_of_server
+
+(if port number as argument is not specified server and client will run at default port 6665)
+
+Server:
+	In the main thread of the server, the server binds to a socket. After that, in a while loop it keeps checking if any client wants to connect. If a client has requested connection, server accepts and launches a thread as associates with it a number.
+Client:
+	The client establishes a connection and activates two threads - Listen and Send to implement a full duplex connection with the server.
+
+The format is as follows - 
+Client a: Message
+Client a,b: Message
+List All
+
+The format is space and case sensitive. 
+
